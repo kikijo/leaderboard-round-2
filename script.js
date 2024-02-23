@@ -18,6 +18,7 @@ const participants = [
     { avatar: 'mouse', name: 'Participant 16', surveyStatus: 'not started' },
 ];
 
+
 // Function to build the leaderboard
 function buildLeaderboard() {
     const leaderboard = document.getElementById('leaderboard');
@@ -83,4 +84,3 @@ const countdownFunction = setInterval(function() {
 
 // Initialize the leaderboard when the page loads
 document.addEventListener('DOMContentLoaded', buildLeaderboard);
-
