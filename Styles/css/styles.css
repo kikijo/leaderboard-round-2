@@ -1,0 +1,68 @@
+/* General Styles */
+body {
+    font-family: 'Droid Sans', sans-serif;
+    padding: 20px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Style for progress bar */
+progress {
+    width: 50%; /* Restricts progress bar to half the page width */
+    height: 20px;
+    border-radius: 10px; /* Rounded corners for softer edges */
+    background-color: #f0f8ff; /* Pale blue background */
+}
+
+progress::-webkit-progress-bar {
+    background-color: #f0f8ff;
+    border-radius: 10px; /* Consistent rounded corners for the bar background */
+}
+
+progress::-webkit-progress-value {
+    background-color: #0077ff; /* Deeper blue for the progress value */
+    border-radius: 10px; /* Rounded corners for the progress value */
+}
+
+/* Style for leaderboard list */
+#leaderboard li {
+    list-style-type: none; /* Removes the default list item markers */
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Space between leaderboard items */
+}
+
+#leaderboard img {
+    width: 110px; /* Adjust as needed */
+    height: 110px; /* Adjust as needed */
+    border-radius: 50%; /* Circular images for avatars */
+    margin-right: 10px; /* Space between the avatar and the participant's name */
+}
+
+#leaderboard span {
+    margin-right: 20px; /* Increased space between participant name and progress bar */
+}
+
+/* Countdown Timer Styles */
+#countdown-container {
+    text-align: center; /* Center-aligns the countdown timer and text */
+    margin: 30px 0; /* Spacing above and below the countdown container */
+}
+
+#countdown {
+    display: inline-block; /* Allows the element to size according to its content */
+    padding: 10px 20px; /* Padding inside the countdown timer box */
+    margin-top: 10px; /* Space between the countdown text and the timer */
+    border: 2px solid #0077ff; /* Solid border around the countdown */
+    border-radius: 5px; /* Rounded corners for the countdown timer */
+    background-color: #f0f8ff; /* Background color for the countdown timer */
+    font-size: 1.2em; /* Slightly larger font size for the countdown numbers */
+}
+
+/* Status Label Styles */
+.status-label {
+    font-size: 0.9em; /* Slightly smaller font size for status labels */
+    margin-left: 10px; /* Space between progress bar and status label */
+    white-space: nowrap; /* Ensures the label stays on one line */
+}
