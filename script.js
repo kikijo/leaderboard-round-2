@@ -1,6 +1,6 @@
 // Participant data array (example)
 const participants = [
-    { avatar: 'owl', name: 'Participant 1', surveyStatus: 'completed' },
+    { avatar: , name: 'Participant 1', surveyStatus: 'completed' },
     { avatar: 'dog', name: 'Participant 2', surveyStatus: 'completed' },
     { avatar: 'lion', name: 'Participant 3', surveyStatus: 'started' },
     { avatar: 'koala', name: 'Participant 4', surveyStatus: 'started' },
