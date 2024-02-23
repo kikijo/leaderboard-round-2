@@ -1,9 +1,23 @@
 // Participant data array (example)
 const participants = [
-    { avatar: 'moose', name: 'Participant 1', surveyStatus: 'started' },
-    { avatar: 'frog', name: 'Participant 2', surveyStatus: 'completed' }
-    // Add more participant data as needed
+    { avatar: 'owl', name: 'Participant 1', surveyStatus: 'completed' },
+    { avatar: 'dog', name: 'Participant 2', surveyStatus: 'completed' },
+    { avatar: 'lion', name: 'Participant 3', surveyStatus: 'started' },
+    { avatar: 'koala', name: 'Participant 4', surveyStatus: 'not started' },
+    { avatar: 'tiger', name: 'Participant 5', surveyStatus: 'not started' },
+    { avatar: 'butterfly', name: 'Participant 6', surveyStatus: 'not started' },
+    { avatar: 'cow', name: 'Participant 7', surveyStatus: 'not started' },
+    { avatar: 'monkey', name: 'Participant 8', surveyStatus: 'not started' },
+    { avatar: 'cat', name: 'Participant 9', surveyStatus: 'not started' },
+    { avatar: 'frog', name: 'Participant 10', surveyStatus: 'not started' },
+    { avatar: 'moose', name: 'Participant 11', surveyStatus: 'not started' },
+    { avatar: 'bunny', name: 'Participant 12', surveyStatus: 'not started' },
+    { avatar: 'bear', name: 'Participant 13', surveyStatus: 'not started' },
+    { avatar: 'fox', name: 'Participant 14', surveyStatus: 'not started' },
+    { avatar: 'unicorn', name: 'Participant 15', surveyStatus: 'not started' },
+    { avatar: 'mouse', name: 'Participant 16', surveyStatus: 'not started' },
 ];
+
 
 // Function to build the leaderboard
 function buildLeaderboard() {
