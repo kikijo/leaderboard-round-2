@@ -4,29 +4,25 @@ body {
     padding: 20px;
     line-height: 1.6;
     color: #333;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center content */
+    background-color: #f4f4f4; /* You might want to adjust the background color as well */
 }
 
 /* Style for progress bar */
 progress {
-    width: 100%; /* Allows progress bar to adjust based on the container's width */
+    width: 50%;
     height: 20px;
     border-radius: 10px;
-    background-color: #f0f8ff;
+    background-color: #dae3f3; /* Lighter shade for progress bar background */
 }
 
-/* Adjustments for mobile */
-@media (max-width: 768px) {
-    #leaderboard img {
-        width: 60px; /* Smaller avatars on mobile */
-        height: 60px;
-    }
+progress::-webkit-progress-bar {
+    background-color: #dae3f3;
+    border-radius: 10px;
+}
 
-    #leaderboard span, .status-label {
-        font-size: 0.8em; /* Smaller text on mobile */
-    }
+progress::-webkit-progress-value {
+    background-color: #375c7f; /* New blue color for the progress value */
+    border-radius: 10px;
 }
 
 /* Style for leaderboard list */
@@ -35,30 +31,38 @@ progress {
     padding: 8px;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Distribute space between elements */
-    width: 100%; /* Full width to use available space */
-    box-sizing: border-box; /* Include padding in width */
+    margin-bottom: 10px;
+    background-color: #e8eef7; /* Light background for list items */
 }
 
 #leaderboard img {
+    width: 110px;
+    height: 110px;
     border-radius: 50%;
     margin-right: 10px;
+    border: 2px solid #375c7f; /* New blue color for the image border */
+}
+
+#leaderboard span {
+    margin-right: 20px;
+    color: #333; /* Text color for names */
 }
 
 /* Countdown Timer Styles */
 #countdown-container {
     text-align: center;
     margin: 30px 0;
-    width: 100%; /* Full width */
 }
 
 #countdown {
     display: inline-block;
     padding: 10px 20px;
-    border: 2px solid #0077ff;
+    margin-top: 10px;
+    border: 2px solid #375c7f; /* New blue color for the countdown frame */
     border-radius: 5px;
-    background-color: #f0f8ff;
+    background-color: #dae3f3; /* Lighter shade for countdown background */
     font-size: 1.2em;
+    color: #333; /* Text color for countdown */
 }
 
 /* Status Label Styles */
@@ -66,4 +70,26 @@ progress {
     font-size: 0.9em;
     margin-left: 10px;
     white-space: nowrap;
+    color: #375c7f; /* New blue color for status labels */
+}
+
+/* Survey Prompt and Button Styles */
+#survey-prompt {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.survey-button {
+    padding: 10px 20px;
+    background-color: #375c7f; /* New blue color for the button */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.survey-button:hover {
+    background-color: #2b4a63; /* Darker shade for hover effect, adjust as needed */
+    cursor: pointer;
 }
