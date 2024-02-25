@@ -8,61 +8,83 @@ body {
 
 /* Style for progress bar */
 progress {
-    width: 50%; /* Restricts progress bar to half the page width */
+    width: 50%;
     height: 20px;
-    border-radius: 10px; /* Rounded corners for softer edges */
-    background-color: #f0f8ff; /* Pale blue background */
+    border-radius: 10px;
+    background-color: #f0f8ff;
 }
 
 progress::-webkit-progress-bar {
     background-color: #f0f8ff;
-    border-radius: 10px; /* Consistent rounded corners for the bar background */
+    border-radius: 10px;
 }
 
 progress::-webkit-progress-value {
-    background-color: #0077ff; /* Deeper blue for the progress value */
-    border-radius: 10px; /* Rounded corners for the progress value */
+    background-color: #0077ff;
+    border-radius: 10px;
 }
 
 /* Style for leaderboard list */
 #leaderboard li {
-    list-style-type: none; /* Removes the default list item markers */
+    list-style-type: none;
     padding: 8px;
     display: flex;
     align-items: center;
-    margin-bottom: 10px; /* Space between leaderboard items */
+    margin-bottom: 10px;
 }
 
 #leaderboard img {
-    width: 110px; /* Adjust as needed */
-    height: 110px; /* Adjust as needed */
-    border-radius: 50%; /* Circular images for avatars */
-    margin-right: 10px; /* Space between the avatar and the participant's name */
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    margin-right: 10px;
 }
 
 #leaderboard span {
-    margin-right: 20px; /* Increased space between participant name and progress bar */
+    margin-right: 20px;
 }
 
 /* Countdown Timer Styles */
 #countdown-container {
-    text-align: center; /* Center-aligns the countdown timer and text */
-    margin: 30px 0; /* Spacing above and below the countdown container */
+    text-align: center;
+    margin: 30px 0;
 }
 
 #countdown {
-    display: inline-block; /* Allows the element to size according to its content */
-    padding: 10px 20px; /* Padding inside the countdown timer box */
-    margin-top: 10px; /* Space between the countdown text and the timer */
-    border: 2px solid #0077ff; /* Solid border around the countdown */
-    border-radius: 5px; /* Rounded corners for the countdown timer */
-    background-color: #f0f8ff; /* Background color for the countdown timer */
-    font-size: 1.2em; /* Slightly larger font size for the countdown numbers */
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: 2px solid #0077ff;
+    border-radius: 5px;
+    background-color: #f0f8ff;
+    font-size: 1.2em;
 }
 
 /* Status Label Styles */
 .status-label {
-    font-size: 0.9em; /* Slightly smaller font size for status labels */
-    margin-left: 10px; /* Space between progress bar and status label */
-    white-space: nowrap; /* Ensures the label stays on one line */
+    font-size: 0.9em;
+    margin-left: 10px;
+    white-space: nowrap;
+}
+
+/* Survey Prompt and Button Styles */
+#survey-prompt {
+    text-align: center; /* Center-aligns the prompt and the button */
+    margin: 20px 0; /* Adds some space above and below the survey prompt */
+}
+
+.survey-button {
+    display: inline-block; /* Allows the button to size according to its content */
+    padding: 10px 20px; /* Padding inside the button */
+    background-color: #0077ff; /* Button color */
+    color: #fff; /* Text color */
+    text-decoration: none; /* Removes underline from the link */
+    border-radius: 5px; /* Rounded corners for the button */
+    font-weight: bold; /* Makes the button text bold */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.survey-button:hover {
+    background-color: #0056b3; /* Darker shade on hover for a nice effect */
+    cursor: pointer; /* Changes the cursor to indicate it's clickable */
 }
