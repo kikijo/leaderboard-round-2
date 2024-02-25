@@ -4,6 +4,7 @@ body {
     padding: 20px;
     line-height: 1.6;
     color: #333;
+    background-color: #f4f4f4; /* You might want to adjust the background color as well */
 }
 
 /* Style for progress bar */
@@ -11,16 +12,16 @@ progress {
     width: 50%;
     height: 20px;
     border-radius: 10px;
-    background-color: #f0f8ff;
+    background-color: #dae3f3; /* Lighter shade for progress bar background */
 }
 
 progress::-webkit-progress-bar {
-    background-color: #f0f8ff;
+    background-color: #dae3f3;
     border-radius: 10px;
 }
 
 progress::-webkit-progress-value {
-    background-color: #0077ff;
+    background-color: #375c7f; /* New blue color for the progress value */
     border-radius: 10px;
 }
 
@@ -31,6 +32,7 @@ progress::-webkit-progress-value {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+    background-color: #e8eef7; /* Light background for list items */
 }
 
 #leaderboard img {
@@ -38,10 +40,12 @@ progress::-webkit-progress-value {
     height: 110px;
     border-radius: 50%;
     margin-right: 10px;
+    border: 2px solid #375c7f; /* New blue color for the image border */
 }
 
 #leaderboard span {
     margin-right: 20px;
+    color: #333; /* Text color for names */
 }
 
 /* Countdown Timer Styles */
@@ -54,10 +58,11 @@ progress::-webkit-progress-value {
     display: inline-block;
     padding: 10px 20px;
     margin-top: 10px;
-    border: 2px solid #0077ff;
+    border: 2px solid #375c7f; /* New blue color for the countdown frame */
     border-radius: 5px;
-    background-color: #f0f8ff;
+    background-color: #dae3f3; /* Lighter shade for countdown background */
     font-size: 1.2em;
+    color: #333; /* Text color for countdown */
 }
 
 /* Status Label Styles */
@@ -65,26 +70,26 @@ progress::-webkit-progress-value {
     font-size: 0.9em;
     margin-left: 10px;
     white-space: nowrap;
+    color: #375c7f; /* New blue color for status labels */
 }
 
 /* Survey Prompt and Button Styles */
 #survey-prompt {
-    text-align: center; /* Center-aligns the prompt and the button */
-    margin: 20px 0; /* Adds some space above and below the survey prompt */
+    text-align: center;
+    margin: 20px 0;
 }
 
 .survey-button {
-    display: inline-block; /* Allows the button to size according to its content */
-    padding: 10px 20px; /* Padding inside the button */
-    background-color: #0077ff; /* Button color */
-    color: #fff; /* Text color */
-    text-decoration: none; /* Removes underline from the link */
-    border-radius: 5px; /* Rounded corners for the button */
-    font-weight: bold; /* Makes the button text bold */
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    padding: 10px 20px;
+    background-color: #375c7f; /* New blue color for the button */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
 }
 
 .survey-button:hover {
-    background-color: #0056b3; /* Darker shade on hover for a nice effect */
-    cursor: pointer; /* Changes the cursor to indicate it's clickable */
+    background-color: #2b4a63; /* Darker shade for hover effect, adjust as needed */
+    cursor: pointer;
 }
