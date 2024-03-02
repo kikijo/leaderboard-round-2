@@ -6,7 +6,7 @@ const participants = [
     { avatar: 'koala', name: '', surveyStatus: 'started' },
     { avatar: 'tiger', name: '', surveyStatus: 'started' },
     { avatar: 'butterfly', name: '', surveyStatus: 'not started' },
-    { avatar: 'cow', name: '', surveyStatus: 'not started' },
+    { avatar: 'cow', name: '', surveyStatus: 'complete' },
     { avatar: 'monkey', name: '', surveyStatus: 'not started' },
     { avatar: 'cat', name: '', surveyStatus: 'not started' },
     { avatar: 'frog', name: '', surveyStatus: 'not started' },
