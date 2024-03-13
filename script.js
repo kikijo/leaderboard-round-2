@@ -78,7 +78,7 @@ const countdownFunction = setInterval(function() {
 
     if (timeleft < 0) {
         clearInterval(countdownFunction);
-        document.getElementById("countdown").innerHTML = "Survey Period Complete";
+        document.getElementById("countdown").innerHTML = "Survey Period Extended";
     }
 }, 1000);
 
